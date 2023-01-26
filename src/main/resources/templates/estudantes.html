@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+<!-- <html lang="pt-br"> -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="src\main\resources\templates\bootstrap"> -->
+    <link rel="stylesheet" href="app.css">
+    <script src="bootstrap/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <title>Listar Estudantes</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container container-fluid col-12 border-bottom border-success fst-italic">
+        <nav class=" navbar py-4 px-1 mb-2  bg-dark row justify-content-center">
+            <h3 class="col-3 text-success  link-success">Api SpringBoot</h3>
+
+            <ul class="nav col-6  justify-content-center">
+                <li><a th:href="@{/home}" class="nav-link px-3 link-light text-success">Home</a></li>
+                <li><a th:href="@{/estudantes}" class="nav-link px-3 link-light text-success ">Listar Usuários</a></li>
+                <li><a th:href="@{/estudantes/cadastrarEstudante}" class="nav-link px-3 link-light text-success">Cadastrar Estudante</a></li>
+                <li><a href="#" class="nav-link px-3 link-light text-success">About Project</a></li>
+            </ul>
+
+            <div class="col-3 text-end">
+                <button type="button" class="btn btn-outline-success me-2">Login</button>
+                <button type="button" class="btn btn-success">Sign-up</button>
+            </div>
+        </nav>
+    </div>
+    <div class="container mt-2 col border border-primary fst-italic">
+        <h1 class="text-center link-light">Lista de Estudantes</h1>
+            <table class="table text-center link-light border border-success">
+                <thead class="table-dark">
+                    <tr>
+                        <th class="col">Nome</th>
+                        <th class="col">Apelido</th>
+                        <th class="col">Email</th>
+                        <th><a th:href="@{/estudantes/cadastrarEstudante}"><button class="btn btn-outline-primary text-center col p-2 w-100">Cadastrar</button></a></th>
+                        
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="estudante: ${estudantes}">
+                        <td th:text="${estudante.nome}">André Luiz Martins Ferreira</td>
+                        <td th:text="${estudante.apelido} ">23r2323d3232431231231231232423423</td>
+                        <td th:text="${estudante.email} ">andrelmf961@gmail.com</td>
+                        <td>
+                            <a th:href="@{/estudantes/editar/{id}(id=${estudante.id})}" class="btn btn-outline-warning w-50">Alterar</a><a th:href="@{/estudantes/{id}(id=${estudante.id})}" class="btn btn-outline-danger w-50">Excluir</a>
+                        </td>
+                    </tr>
+                    
+                </tbody>
+            </table>
+    </div>
+    </div>
+    </div>
+
+
+</body>
+
+</html>
