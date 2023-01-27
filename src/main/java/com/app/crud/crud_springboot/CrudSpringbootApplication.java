@@ -5,7 +5,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-import com.app.crud.crud_springboot.repositorio.EstudanteRepositorio;
+import com.app.crud.crud_springboot.repositorio.UsuarioRepositorio;
 
 @SpringBootApplication
 public class CrudSpringbootApplication implements CommandLineRunner{
@@ -15,12 +15,12 @@ public class CrudSpringbootApplication implements CommandLineRunner{
 	}
 
 	@Autowired
-	private EstudanteRepositorio repositorio;
+	private UsuarioRepositorio repositorio;
 
 	@Override
 	public void run(String... args) throws Exception {
-		// Estudante estudante1 = new Estudante("André", "andre191", "andrelmf555@gmail.com");
-		// repositorio.save(estudante1);
+		// Usuario usuario1 = new Usuario("André", "andre191", "andrelmf555@gmail.com");
+		// repositorio.save(usuario1);
 	}
 
 

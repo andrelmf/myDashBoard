@@ -8,8 +8,8 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
 @Entity
-@Table(name = "estudantes")
-public class Estudante {
+@Table(name = "usuarios")
+public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
@@ -24,12 +24,12 @@ public class Estudante {
     private String email;
 
 
-    public Estudante(){
+    public Usuario(){
         
     }
 
 
-    public Estudante (Long id, String nome, String apelido, String email) {
+    public Usuario (Long id, String nome, String apelido, String email) {
         super();
         this.id = id;
         this.nome = nome;
@@ -37,7 +37,7 @@ public class Estudante {
         this.email = email;
     }
 
-    public Estudante (String nome, String apelido, String email) {
+    public Usuario (String nome, String apelido, String email) {
         super();
         this.nome = nome;
         this.apelido = apelido;
@@ -104,7 +104,7 @@ public class Estudante {
 // toString
     @Override
     public String toString() {
-        return "Estudante [id=" + id + ", nome=" + nome + ", apelido=" + apelido + ", email=" + email + "]";
+        return "Usuario [id=" + id + ", nome=" + nome + ", apelido=" + apelido + ", email=" + email + "]";
     }
 
 
