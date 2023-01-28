@@ -2,29 +2,12 @@
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
 <!-- <html lang="pt-br"> -->
 
-<head th:replace="home :: headMain">
+<head th:replace="home :: headHome">
     <title>Listar Usuários</title>
 </head>
 
 <body class="bg-dark">
-    <header>
-    <div th:fragment="navlinks" class="container container-fluid col-12 border-bottom border-success fst-italic">
-        <nav class=" navbar py-4 px-1 mb-2  bg-dark row justify-content-center">
-            <h3 class="col-3 text-success  link-success">Api SpringBoot</h3>
-
-            <ul class="nav col-6  justify-content-center">
-                <li><a th:href="@{/home}" class="nav-link px-3 link-light text-success">Home</a></li>
-                <li><a th:href="@{/home/usuarios}" class="nav-link px-3 link-light text-success ">Listar Usuários</a></li>
-                <li><a th:href="@{/home/usuarios/cadastrarUsuario}" class="nav-link px-3 link-light text-success">Cadastrar Usuario</a></li>
-                <li><a href="#" class="nav-link px-3 link-light text-success">About Project</a></li>
-            </ul>
-
-            <div class="col-3 text-end">
-                <button type="button" class="btn btn-outline-success me-2">Login</button>
-                <button type="button" class="btn btn-success">Sign-up</button>
-            </div>
-        </nav>
-    </div>
+    <header th:replace="home :: headerHome">
     </header>
     
     <div class="container mt-2 col border border-primary fst-italic">
