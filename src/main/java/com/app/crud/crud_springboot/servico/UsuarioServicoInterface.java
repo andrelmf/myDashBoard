@@ -2,6 +2,7 @@ package com.app.crud.crud_springboot.servico;
 
 import java.util.List;
 
+
 import com.app.crud.crud_springboot.entidade.Usuario;
 
 public interface UsuarioServicoInterface {

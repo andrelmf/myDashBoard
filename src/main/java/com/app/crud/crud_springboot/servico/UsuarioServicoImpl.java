@@ -1,17 +1,15 @@
 package com.app.crud.crud_springboot.servico;
 
 import java.util.List;
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import com.app.crud.crud_springboot.entidade.Usuario;
 import com.app.crud.crud_springboot.repositorio.UsuarioRepositorio;
 
 @Service
 public class UsuarioServicoImpl implements UsuarioServicoInterface {
 
-    @Autowired
+    @Autowired // Injeção de dependência do Usuario repositório para UsuarioServico, nesta classe.
     private UsuarioRepositorio repositorio;
 
     @Override
@@ -42,6 +40,4 @@ public class UsuarioServicoImpl implements UsuarioServicoInterface {
 
 
 
-
-    
 }

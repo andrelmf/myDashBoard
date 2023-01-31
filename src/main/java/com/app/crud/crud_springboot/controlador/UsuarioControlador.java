@@ -1,5 +1,6 @@
 package com.app.crud.crud_springboot.controlador;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,13 +21,12 @@ public class UsuarioControlador {
     // Endereço da Home page
     @GetMapping({"home", "/"})
     public String goToHomePage(){
-    return "home";
+        return "home";
     }
 
     // Listar Usuario
-    @GetMapping({ "/home/usuarios", "/" })
+    @GetMapping({ "/home/usuarios"})
     public String listarUsuarios(Model modelo) {
-
         modelo.addAttribute("usuarios", servico.listarTodosOsUsuarios());
         return "usuarios"; // Retorna o arquivo usuarios
     }

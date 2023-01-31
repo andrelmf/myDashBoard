@@ -21,7 +21,7 @@ public class Usuario {
     private String apelido;
 
     @Column(name = "email", nullable = false, length = 50, unique = true)
-    private String email;
+    private String email; 
 
 
     public Usuario(){
