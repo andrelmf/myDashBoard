@@ -107,7 +107,6 @@ public class Usuario {
         return "Usuario [id=" + id + ", nome=" + nome + ", apelido=" + apelido + ", email=" + email + "]";
     }
 
-
     
 
 }

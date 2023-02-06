@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
-<!-- <html lang="pt-br"> -->
-
-<head th:replace="home :: headHome">
+<head th:replace="head/mainHead.html :: main_head">
     <title>Cadastrar Usuario</title>
 </head>
 
 <body class="bg-dark">
-    <header th:replace="home :: headerHome"></header>
+    <header th:replace="headers/mainHeader.html :: main_header"></header>
     <div class="container">
         <div class="row">
-            <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center container mt-2 col border border-primary fst-italic">
+            <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center container col border border-primary fst-italic">
                 <h1 class="text-center link-light">Formulário de Cadastro</h1>
-
-                <div class="card-body">
-
-                    <form th:action="@{/home/usuarios}" th:object="${usuario}" method="POST" class=" container container-fluid text-success border border-success py-2  mt-3">
+                <div class="card-body m-5">
+                    <form th:action="@{/home/usuarios}" th:object="${usuario}" method="POST" class=" container container-fluid text-success border border-success py-2  mt-3 needs-validation">
 
                         <container class="card-body">
+                            <div>
+                                <label class="label">Nome:</label>
+                                <input class=" mt-2 form-control" name="nome" th:field="*{nome}" required type="text" placeholder="Digite o seu nome completo">
+                                <div class="invalid-feedback">
+                                    Favor preeencher o nome corretamente até 50 caracteres.
+                                </div>
+                            </div>
                             
-                            <label class="label">Nome:</label>
-                            <input class=" mt-2 form-control" name="nome" th:field="*{nome}" required type="text" placeholder="Digite o seu nome completo">
+                            <div>
+                                <label class="label">Apelido:</label>
+                                <input class=" mt-2 form-control" name="apelido" th:field="*{apelido}"  required type="text" placeholder="Digite o seu apelido">
+                                <div class="invalid-feedback">
+                                    Favor preeencher o apelido corretamente até 50 caracteres.
+                                </div>
+                            </div>
                             
-                            <label class="label">Apelido:</label>
-                            <input class=" mt-2 form-control" name="apelido" th:field="*{apelido}"  required type="text" placeholder="Digite o seu apelido">
-                            
-                            <label class="label">E-mail:</label>
-                            <input class=" mt-2 form-control" name="email" th:field="*{email}" required type="email" placeholder="Digite o seu e-mail">
-                            
+                            <div>
+                                <label class="label">E-mail:</label>
+                                <input class=" mt-2 form-control" name="email" th:field="*{email}" required type="email" placeholder="Digite o seu e-mail">
+                                <div class="invalid-feedback">
+                                    Favor preeencher o E-mail corretamente até 50 caracteres.
+                                </div>
+                            </div>
+        
                             <button class=" mt-2 btn btn-outline-success">Cadastrar</button>
                         </container>
                         
                     </form>
-
                 </div>
             </div>
         </div>
-
-
     </div>
 
 

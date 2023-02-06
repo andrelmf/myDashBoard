@@ -1,18 +1,23 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
-<!-- <html lang="pt-br"> -->
-
-<head th:replace="home :: headHome">
+<head th:replace="head/mainHead.html :: main_head">
     <title>Listar Usuários</title>
 </head>
 
 <body class="bg-dark">
-    <header th:replace="home :: headerHome">
+    <header th:replace="headers/mainHeader.html :: main_header">
     </header>
     
-    <div class="container mt-2 col border border-primary fst-italic">
-        <h1 class="text-center link-light">Lista de Usuários</h1>
-            <table class="table text-center link-light border border-success">
+    <div class="container border border-primary fst-italic">
+
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center link-light">Lista de Usuários</h1>
+            </div>
+        </div>
+
+        <div>
+            <table class="table text-center  link-light border border-success p-5">
                 <thead class="table-dark">
                     <tr>
                         <th class="col">Nome</th>
@@ -22,21 +27,22 @@
                         
                     </tr>
                 </thead>
-                <tbody>
+                <tbody class="">
                     <tr th:each="usuario: ${usuarios}">
                         <td th:text="${usuario.nome}">André Luiz Martins Ferreira</td>
                         <td th:text="${usuario.apelido} ">23r2323d3232431231231231232423423</td>
                         <td th:text="${usuario.email} ">andrelmf961@gmail.com</td>
-                        <td>
+                        <td class="col">
                             <a th:href="@{/home/usuarios/editar/{id}(id=${usuario.id})}" class="btn btn-outline-warning w-50">Alterar</a><a th:href="@{/home/usuarios/{id}(id=${usuario.id})}" class="btn btn-outline-danger w-50">Excluir</a>
                         </td>
                     </tr>
                     
                 </tbody>
             </table>
+        </div> 
+        
     </div>
-    </div>
-    </div>
+    
 
 </body>
 

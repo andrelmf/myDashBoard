@@ -1,0 +1,11 @@
+svg:hover{
+    fill : red !important;
+}
+
+.bg-dark{
+    background-color: red !important;
+}
+
+body{
+    background-color: red !important;
+}

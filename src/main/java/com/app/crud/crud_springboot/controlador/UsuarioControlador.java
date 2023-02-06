@@ -2,6 +2,8 @@ package com.app.crud.crud_springboot.controlador;
 
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,16 +19,33 @@ public class UsuarioControlador {
 
     @Autowired
     private UsuarioServicoInterface servico;
+
     
+    //Rotas getImages
+    // @GetMapping({"img"})
+    // public String goToImagePaste(){
+    //     return "img/home/";
+    // }
+    
+    
+
     // Endereço da Home page
     @GetMapping({"home", "/"})
     public String goToHomePage(){
         return "home";
     }
 
+    // Sobre Mim
+    @GetMapping({"/home/sobreMim"})
+    public String goToSobreMim(){
+        return "sobreMim";
+    }
+
+
+    // CRUD - Usuários
     // Listar Usuario
     @GetMapping({ "/home/usuarios"})
-    public String listarUsuarios(Model modelo) {
+    public String listarUsuarios(@PageableDefault(page = 2, size = 2, direction = Sort.Direction.ASC) Model modelo) {
         modelo.addAttribute("usuarios", servico.listarTodosOsUsuarios());
         return "usuarios"; // Retorna o arquivo usuarios
     }
@@ -73,5 +92,7 @@ public class UsuarioControlador {
         servico.deletarUsuario(id);
         return "redirect:/home/usuarios";
     }
+
+
 
 }
