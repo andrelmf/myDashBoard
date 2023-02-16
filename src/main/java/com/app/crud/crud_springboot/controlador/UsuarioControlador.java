@@ -1,6 +1,5 @@
 package com.app.crud.crud_springboot.controlador;
 
-
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
@@ -19,15 +18,6 @@ public class UsuarioControlador {
 
     @Autowired
     private UsuarioServicoInterface servico;
-
-    
-    //Rotas getImages
-    // @GetMapping({"img"})
-    // public String goToImagePaste(){
-    //     return "img/home/";
-    // }
-    
-    
 
     // Endereço da Home page
     @GetMapping({"home", "/"})

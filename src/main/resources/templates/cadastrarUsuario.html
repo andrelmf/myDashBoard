@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
 <head th:replace="head/mainHead.html :: main_head">
-    <title>Cadastrar Usuario</title>
+    <title>Cadastrar Usuários</title>
 </head>
 
 <body class="bg-dark">
@@ -10,9 +10,8 @@
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center container col border border-primary fst-italic">
                 <h1 class="text-center link-light">Formulário de Cadastro</h1>
-                <div class="card-body m-5">
+                <div class="card-body m-4">
                     <form th:action="@{/home/usuarios}" th:object="${usuario}" method="POST" class=" container container-fluid text-success border border-success py-2  mt-3 needs-validation">
-
                         <container class="card-body">
                             <div>
                                 <label class="label">Nome:</label>

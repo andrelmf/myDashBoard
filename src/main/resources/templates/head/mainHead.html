@@ -1,17 +1,40 @@
-<head th:fragment="main_head">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+    <head>
+        <th:block th:fragment="main_head">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- CDN -->
+            <!-- CDN Style -->
+            <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">  -->
+            
+            <!-- CDN Script -->
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+            
+            <!-- CDN CSS DataTables -->                
+            <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.2.0/css/bootstrap.min.css" rel="stylesheet">
+            <link href="https://cdn.datatables.net/1.13.2/css/dataTables.bootstrap5.min.css" rel="stylesheet">
 
-    <!-- Ficheiros -->
-    <link href="static/css/main.css" rel="stylesheet">
-    <link href="bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css" rel="sylesheet" type="text/css">
-    <!-- <link type="text/javascript" src="bootstrap-5.3.0-alpha1-dist/js/jquery-3.6.3.min.js">  -->
-    <link type="text/javascript" src="bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js"> 
+            <!-- CDN JS DataTables -->
+                <script defer src="https://code.jquery.com/jquery-3.5.1.js"></script>
+                <script defer src="https://cdn.datatables.net/1.13.2/js/jquery.dataTables.min.js"></script>
+                <script defer src="https://cdn.datatables.net/1.13.2/js/dataTables.bootstrap5.min.js"></script>
 
-    <title>Home</title>
-</head>
+        <!-- Ficheiros -->
+            <!-- Ficheiro Global Styles -->
+                <!-- bootstrap.min.css -->
+                    <link href="../../Static/css/bootstrap.min.css" th:href="@{/css/bootstrap.min.css}" rel="stylesheet"> 
+                <!-- main.css -->
+                    <link href="../../Static/css/main.css" th:href="@{/css/main.css}" rel="stylesheet"> 
+                
+            <!-- Ficheiro Global Scripts -->
+                <!-- main.js -->
+                    <script defer th:src="@{/js/main.js}"></script>
+
+        </th:block>
+        <title>MyDashBoard</title>
+        
+    </head>
+</html>

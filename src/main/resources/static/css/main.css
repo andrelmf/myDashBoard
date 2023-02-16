@@ -1,11 +1,40 @@
-svg:hover{
-    fill : red !important;
-}
+@import 'bootstrap/scss/functions';
+@import 'bootstrap/scss/variables';
+/* CSS Global */
+    .colorBackground {
+    background-color: #131414;    
+    }
 
-.bg-dark{
-    background-color: red !important;
-}
+    .textWhiteColor {
+        color: white;
+    }
 
-body{
-    background-color: red !important;
-}
+
+    /* Bootstrap Override */
+    
+    :root {
+        --primary: #0000FF;
+        /* outras variáveis de cor personalizadas */
+      }
+
+    
+/* defina outras variáveis de cor conforme necessário */
+  
+  /*  Carousel */
+        .c-item {
+            height: 800px;
+        }
+        .c-img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+
+    /* Redes de contato */
+        #radiusMain {
+            border: 2px solid rgb(56, 79, 85);
+            border-radius: 5px;
+        }
+
+    
