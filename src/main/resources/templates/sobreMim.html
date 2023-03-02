@@ -3,115 +3,189 @@
 <head th:replace="head/mainHead.html :: main_head"></head>
 <body class="bg-dark">
 
-<header th:replace="headers/mainHeader.html :: main_header"></header>
+<!-- Thymeleaf headers : mainHeader.html--> <header th:replace="headers/mainHeader.html :: main_header"></header>
 
-<div class="container text-bg-light text text-success ">
-    <div class="row">
-        <div class="col-10 text-center">
-            <h1>Sobre mim título</h1>
-            <p>Sobre mim texto</p>
+<div class="container text-bg-light text-white radiusApresentacao bg-success bg-opacity-25 p-3">
+    
+    <div class="row flex">
+        <div class="col-md-9 mt-2">
+            <h1 class="text-center">Ola, seja bem-vindo(a)!</h1>
+            <!-- Tag align descontinuada -->
+            <p align="justify" class="p-1  ">
+                Me chamo André e estou em busca de novas oportunidades no mercado de trabalho. Atualmente faço projetos web e android utilizando java e frameworks como springboot / MVC e Bootstrap, além de mysql como SGBD. 
+                Estou em transição de carreira, sou estudante de sistemas de informação e graduado em administração de empresas. Apaixonado pela área de tecnologia e gestão de projetos, sou determinado 
+                a ampliar meus conhecimentos com foco no desenvolvimento de sistemas e execução de tarefas, que visam a melhoria contínua de processos organizacionais. Atualmente curso Sistemas
+                de Informação na Universidade Fumec e crio projetos diariamente com o intuito de adquirir conhecimentos e experiências com desenvolvimento de softwares em aplicações práticas 
+                Web e mobile.
+            </p>
+            <!-- Thymeleaf contatos : contatos.html--> <div th:replace="/contatos/contatos.html:: contatos" style="background-color: red;"></div>
         </div>
-        <div class="col-2">
-            <img th:src="@{/images/sobreMim/imagemDePerfil.jpeg}" width="200px" height="200px" alt="imagemDePerfil">
+        <div class="col-md-3">
+            <img th:src="@{/images/sobreMim/imagemDePerfil.jpeg}" width="150px" height="150px" alt="imagemDePerfil" class="fotoPerfil w-100 h-100 mt-1">
+        </div>
+        
+    </div>
+</div>
+
+<!-- Conhecimentos -->
+<div class="container text-white text-center radiusTecnologias mt-3 bg-black bg-opacity-50 p-3">
+    <h1 class="text-center m-4">Conhecimentos</h1>
+    <div class="row">
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/java.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+          <h4 class="fw-normal">Java</h4>
+          <p>Linguagem de programação Orientada a Objetos.</p>
+          <p><a class="btn btn-secondary" href="https://dev.java/learn/" target="_blank">Ver documentação »</a></p>
+        </div>
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/springboot.svg" type="image/svg+xml" alt="icon_imagem_springboot"></object>
+        <h4 class="fw-normal">Springboot</h4>
+        <p>Framework Java que auxilia no processo produtivo sistêmico com ampla gama de recursos e flexibildiade.</p>
+        <p><a class="btn btn-secondary" href="https://spring.io/">Ver documentação »</a></p>
+        </div>
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/android.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+        <h4 class="fw-normal">Android Studio</h4>
+        <p>Ambiente de desenvolvimento integrado em plataforma android para a construção de aplciativos.</p>
+        <p><a class="btn btn-secondary" href="https://developer.android.com/docs?hl=pt-br" target="_blank">Ver documentação »</a></p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/bootstrap.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+          <h2 class="fw-normal">Bootstrap</h2>
+          <p>Framework web que auxilia no desenvolvimento de interfaces que melhoram a experiência do usuário.</p>
+          <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Ver documentação »</a></p>
+        </div>
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/html.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+          <h2 class="fw-normal">HTML 5</h2>
+          <p>Linguagem de Marcação de Hipertexto.</p>
+          <p><a class="btn btn-secondary mt-3" href="https://www.w3schools.com/html/" target="_blank">Ver documentação »</a></p>
+        </div>
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/css.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+        <h2 class="fw-normal">CSS 3</h2>
+        <p>Mecanismo de estilização utilizado para personalizar conteúdos de páginas web.</p>
+        <p><a class="btn btn-secondary" href="https://www.w3schools.com/css/" target="_blank">Ver documentação »</a></p>
+        </div>
+    </div>
+
+
+    <div class="row">
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/mysql.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+        <h2 class="fw-normal">Mysql</h2>
+        <p>Sistema de Gerenciamento de Banco de Dados (SGBD).</p>
+        <p><a class="btn btn-secondary mt-3" href="https://dev.mysql.com/doc/" target="_blank">Ver documentação »</a></p>
+        </div>
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/git.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+        <h2 class="fw-normal">Git</h2>
+        <p>Sistema de controle de versões distribuído.</p>
+        <p><a class="btn btn-secondary" href="https://git-scm.com/doc" target="_blank">Ver documenstação »</a></p>
+        </div>
+        <div class="col-lg-4">
+          <object data="/images/sobreMim/tecnologias/aws.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
+        <h2 class="fw-normal">Aws</h2>
+        <p>Plataforma de serviços de computação em nuvem.</p>
+        <p><a class="btn btn-secondary" href="https://docs.aws.amazon.com/" target="_blank">Ver documentação »</a></p>
         </div>
     </div>
 </div>
 
-
-<div class="container-fluid text-light">
-    <div class="row">
-        <div class="col text-center">
-            <h1>Tecnologias de Estudo</h1>
+<!-- Meus Projetos -->
+<div class="container text-light radiusProjetos bg-black bg-opacity-50 mt-3 p-3" id="projetos">
+    <h1 class="text-center m-3">Projetos</h1>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-black">
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <object data="/images/sobreMim/projetos/calculadoraweb.svg" type="image/svg+xml" alt="svg_imagem_calculadoraWeb"></object>
+            <div class="card-body bg-primary bg-opacity-50">
+              <p class="card-text">Primeiro projeto com a utilização de html + css + js com deploy no githubpages.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <div class="btn-group">
+                  <a href="" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <object data="/images/sobreMim/projetos/calculadoraandroid.svg" type="image/svg+xml" alt="svg_imagem_calculadoraAndroid"></object>
+            <div class="card-body bg-primary bg-opacity-50">
+              <p class="card-text">Projeto Android com a utilização de java, android studio e git/github.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <div class="btn-group">
+                  <a href="#" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card shadow-sm h-100">
+            <object data="/images/sobreMim/projetos/projetoWeb.svg" type="image/svg+xml" alt="svg_imagem_projetoSpringWeb"></object>
+            <div class="card-body bg-primary bg-opacity-50">
+              <p class="card-text">Projeto Web com a utilização de java, springboot, bootstrap5, html5, css3, mysql com deploy awscloud // heroku.</p>
+              <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <div class="btn-group">
+                  <a th:href="@{/home}" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+</div>
+<!-- Linha do tempo -->
+<div class="container-fluid text-light bg-black bg-opacity-50">
+    <div class="container text-white text-center">
+        <h1 class="text-center m-3">Linha do Tempo</h1>
+        <div class="row">
+            <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2 class="fw-normal">Heading</h2>
+            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div>
+            <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2 class="fw-normal">Heading</h2>
+            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div>
+            <div class="col-lg-4">
+            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+            <h2 class="fw-normal">Heading</h2>
+            <p>And lastly this, the third column of representative placeholder content.</p>
+            <p><a class="btn btn-secondary" href="#">View details »</a></p>
+            </div>
         </div>
     </div>
-</div>  
-
-
-<div class="container-fluid text-light">
-    <div class="row">
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-    </div>
-
-    <div class="row">
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-    </div>
-</div>  
+</div>
 
 <div class="container">
-    <div class="row">
-        <div class="col">
-            <h1 class="text-center mt-5">Projetos</h1>
-            </h1>
+  <div class="row shadow my-4 p-2 bg-white rounded-lg">
+      <div class="col-md-6">
+        <div class="py-2">
+          titulo
         </div>
-    </div>
+        <div class="timeline">
+          <div class="timeline-box">
+            <i class="fa">
 
-    <div class="row">
-        <div class="col text-center">
-            <h1>adasdas</h1>
+            </i>
+          </div>
+          <div class="timeline-content">
+            
+          </div>
         </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-    </div>
 
-    <div class="row">
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-        <div class="col text-center">
-            <h1>adasdas</h1>
-        </div>
-    </div>
-
-    
-
-
+      </div>
+  </div>
 </div>
 
 </body>

@@ -22,5 +22,4 @@ public class CrudSpringbootApplication implements CommandLineRunner{
 		// Usuario usuario1 = new Usuario("André", "andre191", "andrelmf555@gmail.com");
 		// repositorio.save(usuario1);
 	}
-
 }

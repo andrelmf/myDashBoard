@@ -1,6 +1,8 @@
-@import 'bootstrap/scss/functions';
-@import 'bootstrap/scss/variables';
 /* CSS Global */
+body {
+    font-family:'Times New Roman', Times, serif, sans-serif;
+  }
+    /*home.html*/
     .colorBackground {
     background-color: #131414;    
     }
@@ -8,21 +10,9 @@
     .textWhiteColor {
         color: white;
     }
-
-
-    /* Bootstrap Override */
-    
-    :root {
-        --primary: #0000FF;
-        /* outras variáveis de cor personalizadas */
-      }
-
-    
-/* defina outras variáveis de cor conforme necessário */
-  
-  /*  Carousel */
+        /*Carousel*/
         .c-item {
-            height: 800px;
+            height: 700px;
         }
         .c-img {
             height: 100%;
@@ -30,11 +20,44 @@
             filter: brightness(0.8);
         }
 
-
-    /* Redes de contato */
-        #radiusMain {
-            border: 2px solid rgb(56, 79, 85);
-            border-radius: 5px;
+        .radiusCarrosel {
+            border: 10px solid rgb(0, 0, 0);
+            border-radius: 200px;
         }
+        /*Redes de contato*/
+        #radiusMenuSocial {
+            border-radius: 20px;
+        }
+
+    /*sobremim.html*/
+
+    .fotoPerfil{
+        object-fit:fill;
+        border: 2px solid rgb(56, 79, 85);
+        border-radius: 20px;
+        padding: auto;
+    }
+    .radiusApresentacao {
+        border: 2px solid rgb(56, 79, 85);
+        padding: 1px;
+        border-radius: 20px;
+    }
+
+    .radiusTecnologias {
+        border: 2px solid rgb(56, 79, 85);
+        padding: 1px;
+        border-radius: 20px;
+    }
+
+    .radiusProjetos {
+        border: 2px solid rgb(56, 79, 85);
+        padding: 1px;
+        border-radius: 20px;
+    }
+
+    .colorBackground {
+        background-color: #131414;    
+        }
+    
 
     
