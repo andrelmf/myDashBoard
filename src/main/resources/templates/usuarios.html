@@ -1,48 +1,75 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
 <head th:replace="head/mainHead.html :: main_head">
 </head>
 
-<body class="colorBackground text-light">
+<body class="colorBackground text-white">
 
-<!-- Thymeleaf headers : mainHeader.html--> <header th:replace="headers/mainHeader.html :: main_header"></header>
+    <!-- Thymeleaf headers : mainHeader.html-->
+    <header th:replace="headers/mainHeader.html :: main_header"></header>
 
-<div class="container">
-    <div> 
-        <h1 class="text-center mt-4">Lista de Usuários</h1>
-        <table id="example" class="table table-sm table-hover display text-white border border-success p-3" style="width: 100%;">
-            <thead>
-                <tr>
-                    <th>Nome</th>
-                    <th>Apelido</th>
-                    <th>Email</th>
-                    <th><a th:href="@{/home/usuarios/cadastrarUsuario}" class="btn btn-outline-primary btn-sm w-100">Cadastrar</a>
-                    </th>
-    
-                </tr>
-            </thead>
-            <tbody>
-                <tr th:each="usuario: ${usuarios}" class="row-cols-6">
-                    <td th:text="${usuario.nome}" class="text-white col">André Luiz Martins Ferreira</td>
-                    <td th:text="${usuario.apelido}" class="text-white-50 col">23r2323d3232431231231231232423423</td>
-                    <td th:text="${usuario.email}" class="text-white-50 col">andrelmf961@gmail.com</td>
-                    <td class="text-white-50 col">
-                        <button class="btn btn-warning btn-sm w-50 col-2"><a th:href="@{/home/usuarios/editar/{id}(id=${usuario.id})}">Alterar</a></button>
-                        
-                        <button class="btn btn-danger btn-sm w-50 fs-6 col-2"><a th:href="@{/home/usuarios/{id}(id=${usuario.id})}">Excluir</a></button>  
-                        
-                    </td>
-                </tr>
-            </tbody>
-        </table>
+    <div class="container p-2 w-100">
+            <h1 class="text-center m-md-3 display-6">Lista de Usuários</h1>
+            <table id="example" class="table table-sm table-hover table-striped display border border-success p-3" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Apelido</th>
+                        <th>Email</th>
+                        <th><a th:href="@{/home/usuarios/cadastrarUsuario}"
+                                class="btn btn-outline-primary btn-sm w-100">Cadastrar</a>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="usuario: ${usuarios}" class="row-cols-12">
+                        <td th:text="${usuario.nome}" class="text-white col">André Luiz Martins Ferreira</td>
+                        <td th:text="${usuario.apelido}" class="text-white-50 col">23r2323d3232431231231231232423423</td>
+                        <td th:text="${usuario.email}" class="text-white-50 col">andrelmf961@gmail.com</td>
+                        <td class="text-white-50 col">
+                            
+                        <button class="btn btn-outline-warning btn-sm w-50 col-3"><a th:href="@{/home/usuarios/editar/{id}(id=${usuario.id})}" style="text-decoration: none;">Alterar</a></button><button class="btn btn-outline-danger btn-sm w-50 fs-6 col-3"><a
+                        th:href="@{/home/usuarios/{id}(id=${usuario.id})}" style="text-decoration: none;">Excluir</a></button>
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
     </div>
-    
-</div>
-
-        
 
 
-        <!-- Include -->
+    <div class="container p-2 w-100">
+            <h1 class="text-center m-md-3 display-6">Lista de Usuários</h1>
+            <table id="example" class="table table-striped" style="width: 100%;">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Apelido</th>
+                        <th>Email</th>
+                        <th>Cadastrar</th>
+                        <th>Ações</th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="usuario: ${usuarios}" class="row-cols-12">
+                        <td>Rhona Davidson</td>
+                        <td>Integration Specialist</td>
+                        <td>Tokyo</td>
+                        <td>55</td>
+                        <td>2010-10-14</td>
+                        <td>$327,900</td>
+                            
+<td><button class="btn btn-outline-warning btn-sm w-50 col-3"><a th:href="@{/home/usuarios/editar/{id}(id=${usuario.id})}" style="text-decoration: none;">Alterar</a></button><button class="btn btn-outline-danger btn-sm w-50 fs-6 col-3"><a
+    th:href="@{/home/usuarios/{id}(id=${usuario.id})}" style="text-decoration: none;">Excluir</a></button></td>
+
+                    
+                    </tr>
+                </tbody>
+            </table>
+    </div>
 
 </body>
 

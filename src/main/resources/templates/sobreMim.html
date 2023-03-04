@@ -5,6 +5,7 @@
 
 <!-- Thymeleaf headers : mainHeader.html--> <header th:replace="headers/mainHeader.html :: main_header"></header>
 
+<!-- Apresentação -->
 <div class="container text-bg-light text-white radiusApresentacao bg-success bg-opacity-25 p-3">
     
     <div class="row flex">
@@ -12,7 +13,7 @@
             <h1 class="text-center">Ola, seja bem-vindo(a)!</h1>
             <!-- Tag align descontinuada -->
             <p align="justify" class="p-1  ">
-                Me chamo André e estou em busca de novas oportunidades no mercado de trabalho. Atualmente faço projetos web e android utilizando java e frameworks como springboot / MVC e Bootstrap, além de mysql como SGBD. 
+                Me chamo André e estou em busca de uma nova oportunidade no mercado de trabalho. Atualmente faço projetos web e android utilizando java e frameworks como springboot / MVC e Bootstrap, além de mysql como SGBD. 
                 Estou em transição de carreira, sou estudante de sistemas de informação e graduado em administração de empresas. Apaixonado pela área de tecnologia e gestão de projetos, sou determinado 
                 a ampliar meus conhecimentos com foco no desenvolvimento de sistemas e execução de tarefas, que visam a melhoria contínua de processos organizacionais. Atualmente curso Sistemas
                 de Informação na Universidade Fumec e crio projetos diariamente com o intuito de adquirir conhecimentos e experiências com desenvolvimento de softwares em aplicações práticas 
@@ -95,18 +96,18 @@
     </div>
 </div>
 
-<!-- Meus Projetos -->
+<!-- Alguns dos projetos Realizados -->
 <div class="container text-light radiusProjetos bg-black bg-opacity-50 mt-3 p-3" id="projetos">
-    <h1 class="text-center m-3">Projetos</h1>
+    <h1 class="text-center m-3">Alguns dos projetos Realizados</h1>
     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-black">
         <div class="col">
           <div class="card shadow-sm h-100">
             <object data="/images/sobreMim/projetos/calculadoraweb.svg" type="image/svg+xml" alt="svg_imagem_calculadoraWeb"></object>
             <div class="card-body bg-primary bg-opacity-50">
-              <p class="card-text">Primeiro projeto com a utilização de html + css + js com deploy no githubpages.</p>
+              <p class="card-text">Primeiro projeto WEB com a utilização de html + css + js com deploy no githubpages.</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <div class="btn-group">
-                  <a href="" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
+                  <a href="https://andrelmf.github.io/TabelaSimplesIMC/" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
                 </div>
               </div>
             </div>
@@ -116,10 +117,10 @@
           <div class="card shadow-sm h-100">
             <object data="/images/sobreMim/projetos/calculadoraandroid.svg" type="image/svg+xml" alt="svg_imagem_calculadoraAndroid"></object>
             <div class="card-body bg-primary bg-opacity-50">
-              <p class="card-text">Projeto Android com a utilização de java, android studio e git/github.</p>
+              <p class="card-text">Primeiro projeto Android com a utilização de java, android studio e git/github.</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <div class="btn-group">
-                  <a href="#" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
+                  <a href="https://github.com/andrelmf/projeto_android_calculator" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
                 </div>
               </div>
             </div>
@@ -129,7 +130,7 @@
           <div class="card shadow-sm h-100">
             <object data="/images/sobreMim/projetos/projetoWeb.svg" type="image/svg+xml" alt="svg_imagem_projetoSpringWeb"></object>
             <div class="card-body bg-primary bg-opacity-50">
-              <p class="card-text">Projeto Web com a utilização de java, springboot, bootstrap5, html5, css3, mysql com deploy awscloud // heroku.</p>
+              <p class="card-text">Projeto Web com a utilização de tecnologias e conhecimentos aplicados. Inicialização de estudo do framework Spring;</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <div class="btn-group">
                   <a th:href="@{/home}" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
@@ -140,52 +141,51 @@
         </div>
       </div>
 </div>
-<!-- Linha do tempo -->
-<div class="container-fluid text-light bg-black bg-opacity-50">
-    <div class="container text-white text-center">
-        <h1 class="text-center m-3">Linha do Tempo</h1>
-        <div class="row">
-            <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-            <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-            <div class="col-lg-4">
-            <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"></rect><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
-            <h2 class="fw-normal">Heading</h2>
-            <p>And lastly this, the third column of representative placeholder content.</p>
-            <p><a class="btn btn-secondary" href="#">View details »</a></p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-  <div class="row shadow my-4 p-2 bg-white rounded-lg">
-      <div class="col-md-6">
-        <div class="py-2">
-          titulo
-        </div>
-        <div class="timeline">
-          <div class="timeline-box">
-            <i class="fa">
-
-            </i>
-          </div>
-          <div class="timeline-content">
-            
+<!-- Projetos em andamento e a elaborar -->
+<div class="container text-light radiusProjetos bg-black bg-opacity-50 mt-3 p-3" id="projetos">
+  <h1 class="text-center m-3">Projetos em andamento e a elaborar</h1>
+  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-black">
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+          <div class="card-body bg-primary bg-opacity-50">
+            <p class="card-text">Site em desenvolvimento para empresa criada em conjunto com um amigo meu. Este projeto está vinculado à nossa marca e em breve estara em funcionamento.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <div class="btn-group">
+                <a target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualização indisponível no momento</button></a>
+              </div>
+            </div>
           </div>
         </div>
-
       </div>
-  </div>
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1481772306665-d14161f65314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+          <div class="card-body bg-primary bg-opacity-50">
+            <p class="card-text">Desenvolvimento de uma webstore com api integrada a marketplaces, mercado livre, ebay, etc. Projeto dedicado à futura loja de meu pai Jorge's Store para colecionadores.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <div class="btn-group">
+                <a target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualização indisponível no momento</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card shadow-sm h-100">
+          <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
+          <div class="card-body bg-primary bg-opacity-50">
+            <p class="card-text">Desenvolvimento de um aplicativo baseado em uma ideia inovadora relacionada à gestão de tarefas com previsão de conclusão para o final 2024.</p>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+              <div class="btn-group">
+                <a target="_blank"><button type="button" class="btn btn-lg btn-outline-dark ">Visualização indisponível no momento</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 </div>
 
 </body>
