@@ -14,24 +14,24 @@
                     <form th:action="@{/home/usuarios}" th:object="${usuario}" method="POST" class=" container container-fluid text-success border border-success py-2  mt-3 needs-validation">
                         <container class="card-body">
                             <div>
-                                <label class="label">Nome:</label>
-                                <input class=" mt-2 form-control" name="nome" th:field="*{nome}" required type="text" placeholder="Digite o seu nome completo">
+                                <label class="label mt-2">Nome:</label>
+                                <input class=" mt-2 form-control text-white" name="nome" th:field="*{nome}" required type="text" placeholder="Digite o seu nome completo">
                                 <div class="invalid-feedback">
                                     Favor preeencher o nome corretamente até 50 caracteres.
                                 </div>
                             </div>
                             
                             <div>
-                                <label class="label">Apelido:</label>
-                                <input class=" mt-2 form-control" name="apelido" th:field="*{apelido}"  required type="text" placeholder="Digite o seu apelido">
+                                <label class="label mt-2">Apelido:</label>
+                                <input class=" mt-2 form-control text-white" name="apelido" th:field="*{apelido}"  required type="text" placeholder="Digite o seu apelido">
                                 <div class="invalid-feedback">
                                     Favor preeencher o apelido corretamente até 50 caracteres.
                                 </div>
                             </div>
                             
                             <div>
-                                <label class="label">E-mail:</label>
-                                <input class=" mt-2 form-control" name="email" th:field="*{email}" required type="email" placeholder="Digite o seu e-mail">
+                                <label class="label mt-2">E-mail:</label>
+                                <input class=" mt-2 form-control text-white" name="email" th:field="*{email}" required type="email" placeholder="Digite o seu e-mail">
                                 <div class="invalid-feedback">
                                     Favor preeencher o E-mail corretamente até 50 caracteres.
                                 </div>

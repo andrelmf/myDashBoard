@@ -3,7 +3,7 @@ body {
     font-family:'Times New Roman', Times, serif, sans-serif;
   }
 
-    /*home.html*/
+/*home.html*/
     .colorBackground {
     background-color: #131414;    
     }
@@ -39,7 +39,7 @@ body {
             border-radius: 20px;
         }
 
-    /*sobremim.html*/
+/*sobremim.html*/
 
     .fotoPerfil{
         object-fit:fill;
@@ -69,5 +69,13 @@ body {
         background-color: #131414;    
         }
     
-
-    
+/* usuarios.html */
+          /* DATA-TABLES */
+        .dataTables_filter input[type="search"] {
+          background-color: white;
+          color: black;
+        }
+        #myTable_length select {
+          background-color: white;
+          color: black;
+        }
