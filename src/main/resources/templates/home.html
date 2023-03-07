@@ -7,34 +7,34 @@
 <body class="bg-dark"> 
   <!-- Thymeleaf headers : mainHeader.html--> <header th:replace="headers/mainHeader.html :: main_header"></header>
   
-    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
       </div>
-      <div class="carousel-inner radiusCarrosel" style="font-style: italic;">
+      <div class="carousel-inner" style="font-style: italic; border: 10px solid black; border-radius: 200px;">
         <div class="carousel-item active c-item">
           <img src="https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1" class="d-block w-100 c-img" alt="Slide 1">
-          <div class="carousel-caption top-0 titleWhiteStyle"  style="margin-top: 150px;">
+          <div class="carousel-caption top-0 titleWhiteStyle"  style="margin-top: 130px;">
             <p class="mt-5  display-4 fw-bolder text-capitalize">Bem vindo ao meu portifólio!</p>
-            <p class="fw-bolder fs-3 mt-2">É um prazer conhece-lo(a)!</p>
+            <p class="fw-bolder fs-3 mt-2">É um prazer recebe-lo(a)!</p>
             <p class="fw-bolder mt-2">Que tal conhecer um pouco sobre mim?</p>
-            <a th:href="@{/home/sobreMim}" class="nav-link text-white text-light link-primary" style="margin-top: 50px;"><button class="btn btn-primary px-4 py-2 mt-3">Sobre mim</button></a>
+            <a th:href="@{/home/sobreMim}" class="nav-link text-white text-light link-primary" ><button class="btn btn-primary px-4 py-2">Sobre mim</button></a>
           </div>
         </div>
         <div class="carousel-item c-item">
           <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=1080" class="d-block w-100 c-img" alt="Slide 2">
-          <div class="carousel-caption top-0 titleWhiteStyle" style="margin-top: 150px;">
-            <p class="mt-5  display-4 fw-bolder text-capitalize">Conheça um pouco dos meus futuros projetos!</p>
-            <a th:href="@{/home/sobreMim#projetos}" class="nav-link text-white text-light link-primary" style="margin-top: 170px;"><button class="btn btn-primary px-4 py-2 mt-4">Visualizar Projetos</button></a>
+          <div class="carousel-caption top-0 titleWhiteStyle" style="margin-top: 130px;">
+            <p class="mt-5 display-4 fw-bolder text-capitalize">Conheça um pouco dos meus futuros projetos!</p>
+            <a th:href="@{/home/sobreMim#projetos}" class="nav-link text-white text-light link-primary" style="margin-top: 25px;"><button class="btn btn-primary px-4 py-2">Visualizar Projetos</button></a>
           </div>
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="prev">
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleSlidesOnly" data-bs-slide="next">
+      <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>

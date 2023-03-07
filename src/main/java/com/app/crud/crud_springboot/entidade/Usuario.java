@@ -12,8 +12,8 @@ import jakarta.persistence.Table;
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private long id;
 
+    private long id;
     @Column(name = "nome",nullable = false, length = 50)
     private String nome;
 

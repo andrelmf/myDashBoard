@@ -34,7 +34,7 @@ public class UsuarioControlador {
 
     // CRUD - Usuários
     // Listar Usuario
-    @GetMapping({ "/home/usuarios"})
+    @GetMapping({ "/home/usuarios", "/usuarios"})
     public String listarUsuarios(@PageableDefault(page = 2, size = 2, direction = Sort.Direction.ASC) Model modelo) {
         modelo.addAttribute("usuarios", servico.listarTodosOsUsuarios());
         return "usuarios"; // Retorna o arquivo usuarios
@@ -82,7 +82,5 @@ public class UsuarioControlador {
         servico.deletarUsuario(id);
         return "redirect:/home/usuarios";
     }
-
-
 
 }
