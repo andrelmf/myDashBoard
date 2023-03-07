@@ -9,7 +9,7 @@
   <div class="container text-bg-light text-white radiusApresentacao bg-success bg-opacity-25 p-3">
       
       <div class="row flex">
-          <div class="col-md-9 mt-2">
+          <div class=" col-lg-9 col-md-7">
               <h1 class="text-center" style="font-style: italic;">Ola, seja bem-vindo(a)!</h1>
               <!-- Tag align descontinuada -->
               <p align="justify" class="p-1  ">
@@ -21,8 +21,8 @@
               </p>
               <!-- Thymeleaf contatos : contatos.html--> <div th:replace="/contatos/contatos.html:: contatos" style="background-color: red;"></div>
           </div>
-          <div class="col-md-3">
-              <img th:src="@{/images/sobreMim/imagemDePerfil.jpeg}" width="150px" height="150px" alt="imagemDePerfil" class="fotoPerfil w-100 h-100 mt-1">
+          <div class="col-lg-3 col-md-5">
+              <img th:src="@{/images/sobreMim/imagemDePerfil.jpeg}" width="100px" height="100px" alt="imagemDePerfil" class="fotoPerfil w-100 h-100 mt-1">
           </div>
           
       </div>
@@ -130,7 +130,7 @@
             <div class="card shadow-sm h-100">
               <object data="/images/sobreMim/projetos/crud.svg" type="image/svg+xml" alt="svg_imagem_projetoSpringWeb"></object>
               <div class="card-body bg-primary bg-opacity-50">
-                <p class="card-text">Projeto Web com a utilização de tecnologias e conhecimentos aplicados. Inicialização de estudo do framework Spring;</p>
+                <p class="card-text">Projeto Web e CRUD com a utilização de tecnologias e conhecimentos citados anteriormente.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                   <div class="btn-group">
                     <a th:href="@{/usuarios}" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
@@ -175,11 +175,11 @@
         <div class="col">
           <div class="card shadow-sm h-100">
             <img src="https://images.unsplash.com/photo-1581291518857-4e27b48ff24e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
-            <div class="card-body bg-primary bg-opacity-50">
+            <div class="card-body bg-primary bg-opacity-50 ">
               <p class="card-text">Desenvolvimento de um aplicativo baseado em uma ideia inovadora relacionada à gestão de tarefas com previsão de conclusão para o final 2024.</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <div class="btn-group">
-                  <a target="_blank"><button type="button" class="btn btn-lg btn-outline-dark ">Visualização indisponível no momento</button></a>
+                  <a target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualização indisponível no momento</button></a>
                 </div>
               </div>
             </div>

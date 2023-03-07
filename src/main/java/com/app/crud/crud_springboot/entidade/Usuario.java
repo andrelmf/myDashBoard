@@ -6,23 +6,20 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.Email;
-import jakarta.validation.constraints.NotBlank;
 
 @Entity
 @Table(name = "usuarios")
 public class Usuario {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+
     private long id;
-    @NotBlank
     @Column(name = "nome",nullable = false, length = 50)
     private String nome;
 
     @Column(name = "apelido", nullable = false, length = 50)
     private String apelido;
 
-    @Email
     @Column(name = "email", nullable = false, length = 50, unique = true)
     private String email; 
 

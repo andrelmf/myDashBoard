@@ -13,8 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.app.crud.crud_springboot.entidade.Usuario;
 import com.app.crud.crud_springboot.servico.UsuarioServicoInterface;
 
-import jakarta.validation.Valid;
-
 @Controller
 public class UsuarioControlador {
 
@@ -84,7 +82,5 @@ public class UsuarioControlador {
         servico.deletarUsuario(id);
         return "redirect:/home/usuarios";
     }
-
-
 
 }

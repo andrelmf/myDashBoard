@@ -15,7 +15,7 @@
                         <container class="card-body">
                             <div>
                                 <label class="label mt-2">Nome:</label>
-                                <input class=" mt-2 form-control text-white" name="nome" th:field="*{nome}" required type="text" placeholder="Digite o seu nome completo">
+                                <input class=" mt-2 form-control" name="nome" th:field="*{nome}" required type="text" maxlength="50" placeholder="Digite o seu nome completo" style="background-color: #fff;">
                                 <div class="invalid-feedback">
                                     Favor preeencher o nome corretamente até 50 caracteres.
                                 </div>
@@ -23,7 +23,7 @@
                             
                             <div>
                                 <label class="label mt-2">Apelido:</label>
-                                <input class=" mt-2 form-control text-white" name="apelido" th:field="*{apelido}"  required type="text" placeholder="Digite o seu apelido">
+                                <input class=" mt-2 form-control" name="apelido" th:field="*{apelido}"  required type="text" maxlength="50" placeholder="Digite o seu apelido" style="background-color: #fff;">
                                 <div class="invalid-feedback">
                                     Favor preeencher o apelido corretamente até 50 caracteres.
                                 </div>
@@ -31,7 +31,7 @@
                             
                             <div>
                                 <label class="label mt-2">E-mail:</label>
-                                <input class=" mt-2 form-control text-white" name="email" th:field="*{email}" required type="email" placeholder="Digite o seu e-mail">
+                                <input class=" mt-2 form-control" name="email" th:field="*{email}" required type="email" maxlength="50" placeholder="Digite o seu e-mail" style="background-color: #fff;">
                                 <div class="invalid-feedback">
                                     Favor preeencher o E-mail corretamente até 50 caracteres.
                                 </div>
