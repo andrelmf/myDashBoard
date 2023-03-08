@@ -1,6 +1,6 @@
 s<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
-  <head th:include="~{head/mainHead.html :: main_head}"></head>
+  <head th:insert="~{head/mainHead.html :: main_head}"></head>
 
   <div th:fragment="contatos">
     <div class="container text-center mt-1">
@@ -64,20 +64,21 @@ s<!DOCTYPE html>
                       <form th:action="@{https://formsubmit.co/andrelmf961@gmail.com}" method="POST">
 
                         <input type="hidden" name="_next" th:value="@{https://containers-us-west-42.railway.app:7857/emailEnviado.html}">
+
                         <div class="mb-3 ">
                           <label for="email" class="col-form-label">Digite seu e-mail:</label>
-                          <input type="email" name="email" placeholder="Digite seu e-mail:" class="form-control border-dark" id="email"  required maxlength="50"/>
+                          <input type="email" name="email" placeholder="Digite seu e-mail:" class="form-control border-dark" id="email"  required maxlength="50" style="background-color: #fff;"/>
                         </div>
 
                         <div class="mb-3 ">
                           <label for="inputName" class="col-form-label">Digite seu e-nome:</label>
-                          <input type="name" name="name" placeholder="Digite seu nome:" class="form-control border-dark" id="inputName"  required maxlength="50"/>
+                          <input type="name" name="name" placeholder="Digite seu nome:" class="form-control border-dark" id="inputName"  required maxlength="50" style="background-color: #fff;"/>
                         </div>
                         
                       
                         <div class="mb-3 border-dark">
                           <label for="textAreaMensagem" class="col-form-label">Digite sua mensagem:</label>
-                          <textarea name="message" class="form-control border-dark" id="textAreaMensagem" placeholder="Limite de 400 caracteres." required maxlength="400"></textarea>
+                          <textarea name="message" class="form-control border-dark" id="textAreaMensagem" placeholder="Limite de 400 caracteres." required maxlength="400" style="background-color: #fff;"></textarea>
                         </div>
 
                         <div class="modal-footer">

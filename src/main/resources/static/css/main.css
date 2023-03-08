@@ -3,14 +3,17 @@ body {
     font-family:'Times New Roman', Times, serif, sans-serif;
   }
 
-input:invalid, textarea:invalid{
-    border: 2px solid rgb(204, 95, 95); /* borda verde com 2 pixels de largura */
-    background-color: #cea4a4; /* fundo verde claro */
+  input {
+    background-color: #fff;
+  }
+  input:invalid, textarea:invalid{
+    border: 3px solid rgb(197, 62, 62); /* borda verde com 2 pixels de largura */
+    background-color: #d69292; /* fundo verde claro */
 }
 
 input:valid, textarea:valid{
-    border: 2px solid rgb(98, 211, 98); /* borda verde com 2 pixels de largura */
-    background-color: #95d495; /* fundo verde claro */
+    border: 3px solid rgb(84, 212, 84); /* borda verde com 2 pixels de largura */
+    background-color: #5cd35c; /* fundo verde claro */
 }
 
 
