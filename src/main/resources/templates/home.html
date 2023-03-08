@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
-  <head th:include="~{head/mainHead.html :: main_head}">
+  <head th:insert="~{head/mainHead.html :: main_head}">
     <title>Home</title>
 </head>
 
 <body class="bg-dark"> 
-  <!-- Thymeleaf headers : mainHeader.html--> <header th:include="~{headers/mainHeader.html :: main_header}"></header>
+  <!-- Thymeleaf headers : mainHeader.html--> <header th:insert="~{headers/mainHeader.html :: main_header}"></header>
   
     <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -40,7 +40,7 @@
       </button>
     </div>
 
-  <!-- Thymeleaf contatos : contatos.html--> <div th:include="~{/contatos/contatos.html:: contatos}"></div>
+  <!-- Thymeleaf contatos : contatos.html--> <div th:insert="~{/contatos/contatos.html:: contatos}"></div>
     
 </div>
 </body>
