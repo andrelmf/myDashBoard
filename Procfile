@@ -1,1 +1,0 @@
-web Java -Dserver.port=$PORT $JAVA_OPTS -jar target/crud_springboot-0.0.1-SNAPSHOT.jar
