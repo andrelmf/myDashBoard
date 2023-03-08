@@ -1,7 +1,6 @@
 s<!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
-<head th:replace="head/mainHead.html :: main_head">
-</head>
+  <head th:include="~{head/mainHead.html :: main_head}"></head>
 
   <div th:fragment="contatos">
     <div class="container text-center mt-1">
@@ -64,7 +63,7 @@ s<!DOCTYPE html>
                     <div class="modal-body">
                       <form th:action="@{https://formsubmit.co/andrelmf961@gmail.com}" method="POST">
 
-                        <input type="hidden" name="_next" th:value="@{https://localhost:8090/emailEnviado.html}">
+                        <input type="hidden" name="_next" th:value="@{https://containers-us-west-42.railway.app:7857/emailEnviado.html}">
                         <div class="mb-3 ">
                           <label for="email" class="col-form-label">Digite seu e-mail:</label>
                           <input type="email" name="email" placeholder="Digite seu e-mail:" class="form-control border-dark" id="email"  required maxlength="50"/>
