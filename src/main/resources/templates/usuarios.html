@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
 
-<head th:replace="head/mainHead.html :: main_head">
-</head>
+<head th:include="~{head/mainHead.html :: main_head}"></head>
 
 <body class="colorBackground text-white">
 
     <!-- Thymeleaf headers : mainHeader.html-->
-    <header th:replace="headers/mainHeader.html :: main_header"></header>
+    <header th:include="~{headers/mainHeader.html :: main_header}"></header>
 
     <div class="container-fluid p-2 w-100 text-bg-white">
             <h1 class="text-center m-md-3 display-6" style="font-style: italic;">Lista de Usuários</h1>

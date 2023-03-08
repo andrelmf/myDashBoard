@@ -20,7 +20,7 @@ public class UsuarioControlador {
     private UsuarioServicoInterface servico;
 
     // Endereço da Home page
-    @GetMapping({"/", "/home"})
+    @GetMapping({"/","/home", "/status"})
     public String goToHomePage(){
         return "home";
     }

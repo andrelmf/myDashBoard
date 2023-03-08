@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
-<head th:replace="head/mainHead.html :: main_head">
-    <title>Cadastrar Usuários</title>
-</head>
+    <head th:include="~{head/mainHead.html :: main_head}">
+        <title>Cadastrar Usuários</title>
+    </head>
 
 <body class="bg-dark">
-    <!-- Thymeleaf headers : mainHeader.html--> <header th:replace="headers/mainHeader.html :: main_header"></header>
+    <!-- Thymeleaf headers : mainHeader.html--> <header th:include="~{headers/mainHeader.html :: main_header}"></header>
     <div class="container">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 justify-content-center container col border border-primary fst-italic">
