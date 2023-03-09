@@ -16,6 +16,27 @@ input:valid, textarea:valid{
     background-color: #5cd35c; /* fundo verde claro */
 }
 
+/* header.html */
+@media screen and (max-width:274px){
+    .navbar-brand{
+        flex: auto;
+        justify-content: center;
+    }
+    .navbar-toggler {
+        width: 100%;
+    } 
+    .titulo-center {
+        text-align: center;
+    }
+}
+@media screen and (max-width:575px){
+    .navbar-nav .nav-item {
+        flex: auto;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+}
 
 /*home.html*/
     .colorBackground {
