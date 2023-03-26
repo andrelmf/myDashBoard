@@ -18,7 +18,6 @@ public class CrudSpringbootApplication implements CommandLineRunner{
 
 	@Override
 	public void run(String... args) throws Exception {
-		// Usuario usuario1 = new Usuario("André", "andre191", "andrelmf512@gmail.com");
-		// repositorio.save(usuario1);
+		
 	}
 }
