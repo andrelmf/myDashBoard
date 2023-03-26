@@ -12,17 +12,17 @@
           <div class=" col-lg-9 col-md-7">
               <h1 class="text-center" style="font-style: italic;">Ola, seja bem-vindo(a)!</h1>
               <!-- Tag align descontinuada -->
-              <p align="justify" class="p-1  ">
-                  Me chamo André e estou em busca de uma nova oportunidade no mercado de trabalho. Atualmente faço projetos web e android utilizando java e frameworks como springboot / MVC e Bootstrap, além de mysql como SGBD. 
+              <p class="p-1  text-center">
+                  Me chamo André e estou em busca de uma nova oportunidade no mercado de trabalho. Atualmente faço projetos web e android utilizando java e frameworks como springboot, Bootstrap e mysql como SGBD. 
                   Estou em transição de carreira, sou estudante de sistemas de informação e graduado em administração de empresas. Apaixonado pela área de tecnologia e gestão de projetos, sou determinado 
                   a ampliar meus conhecimentos com foco no desenvolvimento de sistemas e execução de tarefas, que visam a melhoria contínua de processos organizacionais. Atualmente curso Sistemas
                   de Informação na Universidade Fumec e crio projetos diariamente com o intuito de adquirir conhecimentos e experiências com desenvolvimento de softwares em aplicações práticas 
                   Web e mobile.
               </p>
-              <!-- Thymeleaf contatos : contatos.html--> <div th:insert="~{/contatos/contatos.html :: contatos}"></div>
+              <!-- Thymeleaf contatos : contatos.html--> <div th:insert="~{contatos/contatos.html :: contatos}"></div>
           </div>
           <div class="col-lg-3 col-md-5">
-              <img th:src="@{/images/sobreMim/imagemDePerfil.jpeg}" width="100px" height="100px" alt="imagemDePerfil" class="fotoPerfil w-100 h-100 mt-1">
+              <img th:src="@{/images/sobreMim/foto_perfil.png}" width="100px" height="100px" alt="imagemDePerfil" class="fotoPerfil w-100 h-100 mt-1">
           </div>
           
       </div>
@@ -59,7 +59,7 @@
             <p>Framework web que auxilia no desenvolvimento de interfaces que melhoram a experiência do usuário.</p>
             <p><a class="btn btn-secondary" href="https://getbootstrap.com/docs/5.3/getting-started/introduction/" target="_blank">Ver documentação »</a></p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 ">
             <object data="/images/sobreMim/tecnologias/html.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
             <h2 class="fw-normal">HTML 5</h2>
             <p>Linguagem de Marcação de Hipertexto.</p>
@@ -74,18 +74,18 @@
       </div>
 
 
-      <div class="row">
+      <div class="row ">
           <div class="col-lg-4">
             <object data="/images/sobreMim/tecnologias/mysql.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
           <h2 class="fw-normal">Mysql</h2>
           <p>Sistema de Gerenciamento de Banco de Dados (SGBD).</p>
           <p><a class="btn btn-secondary mt-3" href="https://dev.mysql.com/doc/" target="_blank">Ver documentação »</a></p>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4" style="align-self: baseline;">
             <object data="/images/sobreMim/tecnologias/git.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
           <h2 class="fw-normal">Git</h2>
           <p>Sistema de controle de versões distribuído.</p>
-          <p><a class="btn btn-secondary" href="https://git-scm.com/doc" target="_blank">Ver documenstação »</a></p>
+          <p><a class="btn btn-secondary" href="https://git-scm.com/doc" target="_blank">Ver documentação »</a></p>
           </div>
           <div class="col-lg-4">
             <object data="/images/sobreMim/tecnologias/aws.svg" type="image/svg+xml" alt="icon_imagem_java"></object>
@@ -102,7 +102,7 @@
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 text-black">
           <div class="col">
             <div class="card shadow-sm h-100">
-              <object data="/images/sobreMim/projetos/calculadoraweb.svg" type="image/svg+xml" alt="svg_imagem_calculadoraWeb"></object>
+                <object data="/images/sobreMim/projetos/calculadoraweb.svg" type="image/svg+xml" alt="svg_imagem_calculadoraWeb"></object>
               <div class="card-body bg-primary bg-opacity-50">
                 <p class="card-text">Primeiro projeto WEB com a utilização de html + css + js com deploy no githubpages.</p>
                 <div class="d-grid gap-2 d-md-flex justify-content-md-center">
@@ -118,7 +118,7 @@
               <object data="/images/sobreMim/projetos/calculadoraandroid.svg" type="image/svg+xml" alt="svg_imagem_calculadoraAndroid"></object>
               <div class="card-body bg-primary bg-opacity-50">
                 <p class="card-text">Primeiro projeto Android com a utilização de java, android studio e git/github.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
                   <div class="btn-group">
                     <a href="https://github.com/andrelmf/projeto_android_calculator" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
                   </div>
@@ -130,8 +130,8 @@
             <div class="card shadow-sm h-100">
               <object data="/images/sobreMim/projetos/crud.svg" type="image/svg+xml" alt="svg_imagem_projetoSpringWeb"></object>
               <div class="card-body bg-primary bg-opacity-50">
-                <p class="card-text">Projeto Web e CRUD com a utilização de tecnologias e conhecimentos citados anteriormente.</p>
-                <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <p class="card-text">Projeto Web e CRUD com a utilização de conhecimentos backend, frontend e integração de apis.</p>
+                <div class="d-grid gap-2 d-md-flex justify-content-md-center ">
                   <div class="btn-group">
                     <a th:href="@{/usuarios}" target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualizar Projeto</button></a>
                   </div>
@@ -150,7 +150,7 @@
           <div class="card shadow-sm h-100">
             <img src="https://images.unsplash.com/photo-1589903308904-1010c2294adc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
             <div class="card-body bg-primary bg-opacity-50">
-              <p class="card-text">Site em desenvolvimento para empresa criada em conjunto com um amigo meu. Este projeto está vinculado à nossa marca e em breve estara em funcionamento.</p>
+              <p class="card-text">Site em desenvolvimento para empresa criada em conjunto com amigo. Este projeto está vinculado à nossa marca e em breve estara em funcionamento.</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <div class="btn-group">
                   <a target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualização indisponível no momento</button></a>
@@ -163,7 +163,7 @@
           <div class="card shadow-sm h-100">
             <img src="https://images.unsplash.com/photo-1481772306665-d14161f65314?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80">
             <div class="card-body bg-primary bg-opacity-50">
-              <p class="card-text">Desenvolvimento de uma webstore com api integrada a marketplaces, mercado livre, ebay, etc. Projeto dedicado à futura loja de meu pai Jorge's Store para colecionadores.</p>
+              <p class="card-text">Desenvolvimento de webstore com api integrada a marketplaces, mercado livre, ebay, etc. Projeto dedicado à futura loja de meu pai Jorge's Store para colecionadores.</p>
               <div class="d-grid gap-2 d-md-flex justify-content-md-center">
                 <div class="btn-group">
                   <a target="_blank"><button type="button" class="btn btn-lg btn-outline-dark">Visualização indisponível no momento</button></a>
