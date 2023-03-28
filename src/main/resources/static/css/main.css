@@ -61,7 +61,49 @@ input:valid, textarea:valid{
             filter: brightness(0.8);
         }
 
+        .carouselStyle{
+            font-style: italic; 
+            border: 10px solid black; 
+            border-radius: 200px;
+        }
 
+        .carouselText1{
+            margin-top: 150px;
+        }
+
+        .carouselText2{
+            margin-top: 150px;
+        }
+        @media screen and (max-height:915px){
+              .carousel-inner {
+                height: 550px;
+              }
+
+              .carouselStyle{
+                font-style: italic; 
+                border: 10px solid black; 
+            }
+
+            .carouselText1{
+                margin-top: 150px !important;
+            }
+
+            .carouselText2{
+                margin-top: 150px !important;
+            }
+
+            .carouselText1 a{
+                margin-top: 50px !important;
+            }
+
+            .carouselText2 a{
+                margin-top: 10px !important;
+            }
+
+              
+
+        }
+        
         /*Redes de contato*/
         .radiusMenuSocial {
             background-color: black;
