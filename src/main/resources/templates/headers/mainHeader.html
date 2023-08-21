@@ -1,0 +1,53 @@
+<!DOCTYPE html>k
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+  <head th:insert="~{head/mainHead.html :: main_head}"></head>
+  
+<body>
+  
+  <!-- Inicio Inclusão teste -->
+  <header th:fragment="main_header">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark sticky-top ">
+      <div class="container-lg">
+          <a th:href="@{/home/sobreMim}" class="navbar-brand d-flex align-items-center my-2 my-lg-0 me-lg-auto text-white text-decoration-none link-success" id="teste">
+            <svg class="bi d-block mx-auto mb-1" width="50" height="50" style="color: rgb(44, 175, 35);" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Spring</title><path d="M21.8537 1.4158a10.4504 10.4504 0 0 1-1.284 2.2471A11.9666 11.9666 0 1 0 3.8518 20.7757l.4445.3951a11.9543 11.9543 0 0 0 19.6316-8.2971c.3457-3.0126-.568-6.8649-2.0743-11.458zM5.5805 20.8745a1.0174 1.0174 0 1 1-.1482-1.4323 1.0396 1.0396 0 0 1 .1482 1.4323zm16.1991-3.5806c-2.9385 3.9263-9.2601 2.5928-13.2852 2.7904 0 0-.7161.0494-1.4323.1481 0 0 .2717-.1234.6174-.2469 2.8398-.9877 4.1732-1.1853 5.9018-2.0743 3.2349-1.6545 6.4698-5.2844 7.1118-9.0379-1.2347 3.6053-4.9881 6.7167-8.3959 7.9761-2.3459.8643-6.5685 1.7039-6.5685 1.7039l-.1729-.0988c-2.8645-1.4076-2.9632-7.6304 2.2718-9.6306 2.2966-.889 4.4696-.395 6.9637-.9877 2.6422-.6174 5.7043-2.5929 6.939-5.1857 1.3828 4.1732 3.062 10.643.0493 14.6434z" fill="#2caf23"></path></svg>
+            <h4 class="ms-2 mt-2 link-black">My Dashboard</h4>
+          </a>
+        
+  
+        <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+  
+        <div class="collapse navbar-collapse col" id="navbarSupportedContent">
+          
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 col-12 flex-row justify-content-end">
+              <li class="nav-item ">
+                <a th:href="@{/home}" class="nav-link text-light link-primary text-white text-center">
+                  <svg class="bi d-block mx-auto mb-1 text-white link-primary" width="15" height="15"><use xlink:href="#home"></use>
+                    <path d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.354 1.146ZM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4H2.5Z"fill="#0B5ED7"/>
+                  </svg>
+                  Home
+                </a>
+              </li>
+              <li class="nav-item">
+                <a th:href="@{/home/sobreMim}" class="nav-link text-white text-light link-primary text-center">
+                  <svg class="bi d-block mx-auto mb-1" width="15" height="15"><use xlink:href="#people-circle"></use>
+                    <path d="M11 8a3 3 0 1 1-6 0 3 3 0 0 1 6 0z" fill="#0B5ED7"/>
+                    <path d="M14 14V4.5L9.5 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2zM9.5 3A1.5 1.5 0 0 0 11 4.5h2v9.255S12 12 8 12s-5 1.755-5 1.755V2a1 1 0 0 1 1-1h5.5v2z" fill="#0B5ED7"/>
+                  </svg>
+                  Sobre mim
+                </a>
+              </li>
+            </ul>
+          
+  
+  
+        </div>
+      </div>
+    </nav>
+  </header>
+  
+  <!-- Fim inclusão teste -->
+
+</body>
+</html>

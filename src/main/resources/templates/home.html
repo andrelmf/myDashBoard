@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+  <head th:insert="~{head/mainHead.html :: main_head}">
+    <title>Home</title>
+  </head>
+
+<body class="bg-dark"> 
+  <!-- Thymeleaf headers : mainHeader.html--> <header th:insert="~{headers/mainHeader.html :: main_header}"></header>
+
+    <div id="mainSlider" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#mainSlider" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      </div>
+      <div class="carousel-inner carouselStyle">
+        <div class="carousel-item active c-item">
+          <img src="https://images.pexels.com/photos/327540/pexels-photo-327540.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&dpr=1" class="d-block w-100 c-img" alt="Slide 1">
+          <div class="carousel-caption top-0 titleWhiteStyle carouselText1"  >
+            <div class="container">
+              <h1 class="fw-bolder text-capitalize">Bem vindo ao meu portifólio! </h1>
+              <h2 class="fw-bolder fs-3">É um prazer recebe-lo(a)!</h2>
+              <a th:href="@{/home/sobreMim}" class="nav-link text-white text-light link-primary" ><button class="btn btn-primary px-4 py-2" style="margin-top: 30px;">Sobre mim</button></a>
+            </div>
+            
+          
+          </div>
+        </div>
+        <div class="carousel-item c-item">
+          <img src="https://images.unsplash.com/photo-1605379399642-870262d3d051?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&q=1080" class="d-block w-100 c-img" alt="Slide 2">
+          <div class="carousel-caption top-0 titleWhiteStyle carouselText2">
+            <div class="container">
+              <h1 class="fw-bolder text-capitalize">Conheça um pouco dos meus futuros projetos!</h1>
+              <a th:href="@{/home/sobreMim#projetos}" class="nav-link text-white text-light link-primary"><button class="btn btn-primary px-4 py-2" style="margin-top: 70px;">Visualizar Projetos</button></a>
+            </div> 
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#mainSlider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#mainSlider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  <!-- Thymeleaf contatos : contatos.html--> <div th:insert="~{contatos/contatos.html :: contatos}"></div>
+    
+  </div>
+    
+</body>
+
+</html>

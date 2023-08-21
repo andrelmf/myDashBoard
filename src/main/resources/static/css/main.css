@@ -1,0 +1,154 @@
+/* CSS Global */
+body {
+    font-family:'Times New Roman', Times, serif, sans-serif;
+  }
+
+  input {
+    background-color: #fff;
+  }
+  input:invalid, textarea:invalid{
+    border: 3px solid rgb(197, 62, 62); /* borda verde com 2 pixels de largura */
+    background-color: #d69292; /* fundo verde claro */
+}
+
+input:valid, textarea:valid{
+    border: 3px solid rgb(84, 212, 84); /* borda verde com 2 pixels de largura */
+    background-color: #5cd35c; /* fundo verde claro */
+}
+
+/* header.html */
+@media screen and (max-width:274px){
+    .navbar-brand{
+        flex: auto;
+        justify-content: center;
+    }
+    .navbar-toggler {
+        width: 100%;
+    } 
+    .titulo-center {
+        text-align: center;
+    }
+}
+@media screen and (max-width:575px){
+    .navbar-nav .nav-item {
+        flex: auto;
+        justify-content: center;
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+}
+
+/*home.html*/
+    .colorBackground {
+    background-color: #000000;    
+    }
+
+    .titleWhiteStyle {
+        font-family: "Roboto", sans-serif;
+        color: white;
+        text-align: center;
+        text-transform: uppercase;
+        letter-spacing: 0.2em;
+        text-shadow: 0 0 5px #fff;
+    }
+        /*Carousel*/
+        .c-item {
+            height: 700px;
+        }
+        .c-img {
+            height: 100%;
+            object-fit: cover;
+            filter: brightness(0.8);
+        }
+
+        .carouselStyle{
+            font-style: italic; 
+            border: 10px solid black; 
+            border-radius: 200px;
+        }
+
+        .carouselText1{
+            margin-top: 150px;
+        }
+
+        .carouselText2{
+            margin-top: 150px;
+        }
+        @media screen and (max-height:915px){
+              .carousel-inner {
+                height: 550px;
+              }
+
+              .carouselStyle{
+                font-style: italic; 
+                border: 10px solid black; 
+            }
+
+            .carouselText1{
+                margin-top: 150px !important;
+            }
+
+            .carouselText2{
+                margin-top: 150px !important;
+            }
+
+            .carouselText1 a{
+                margin-top: 50px !important;
+            }
+
+            .carouselText2 a{
+                margin-top: 10px !important;
+            }
+
+              
+
+        }
+        
+        /*Redes de contato*/
+        .radiusMenuSocial {
+            background-color: black;
+            border-radius: 20px;
+        }
+
+
+
+/*sobremim.html*/
+
+    .fotoPerfil{
+        object-fit:fill;
+        border: 2px solid rgb(56, 79, 85);
+        border-radius: 20px;
+        padding: auto;
+    }
+    .radiusApresentacao {
+        border: 2px solid rgb(56, 79, 85);
+        padding: 1px;
+        border-radius: 20px;
+    }
+
+    .radiusTecnologias {
+        border: 2px solid rgb(56, 79, 85);
+        padding: 1px;
+        border-radius: 20px;
+    }
+
+    .radiusProjetos {
+        border: 2px solid rgb(56, 79, 85);
+        padding: 1px;
+        border-radius: 20px;
+    }
+
+    .colorBackground {
+        background-color: #131414;    
+        }
+    
+/* usuarios.html */
+          /* DATA-TABLES */
+        .dataTables_filter input[type="search"] {
+          background-color: white;
+          color: black;
+        }
+        #myTable_length select {
+          background-color: white;
+          color: black;
+        }

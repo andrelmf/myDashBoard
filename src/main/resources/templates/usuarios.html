@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="pt-br">
+
+<head th:insert="~{head/mainHead.html :: main_head}"></head>
+
+<body class="colorBackground text-white">
+
+    <!-- Thymeleaf headers : mainHeader.html-->
+    <header th:insert="~{headers/mainHeader.html :: main_header}"></header>
+
+    <div class="container-fluid p-2 w-100 text-bg-white">
+            <h1 class="text-center m-md-3 display-6" style="font-style: italic;">Lista de Usuários</h1>
+            <table id="myTable" class="table table-sm table-hover table-striped display border border-success p-3" style="width: 100%;">
+                <thead class="text-white">
+                    <tr>
+                        <th>Nome</th>
+                        <th>Apelido</th>
+                        <th>Email</th>
+                        <th colspan="1"><a th:href="@{/home/usuarios/cadastrarUsuario}"
+                                class="btn btn-outline-primary btn-md w-100">Cadastrar</a>
+                        </th>
+
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr th:each="usuario: ${usuarios}" class="row-cols-12">
+                        <td th:text="${usuario.nome}" class="text-white col">André Luiz Martins Ferreira</td>
+                        <td th:text="${usuario.apelido}" class="text-white col">23r2323d3232431231231231232423423</td>
+                        <td th:text="${usuario.email}" class="text-white col">andrelmf961@gmail.com</td>
+                        <td class="text-white col">
+                        <a th:href="@{/home/usuarios/editar/{id}(id=${usuario.id})}" style="text-decoration: none; font-size: 12px;" class="btn btn-outline-warning btn-sm w-50 col-3 p-2 text-center">Alterar</a><a th:href="@{/home/usuarios/{id}(id=${usuario.id})}" style="text-decoration: none; font-size: 12px;" class="btn btn-outline-danger btn-sm w-50 col-3 p-2 text-center">Excluir</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </div>
+
+</body>
+
+</html>
